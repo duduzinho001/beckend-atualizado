@@ -1,0 +1,13 @@
+{
+    "nome": "Zé Ninguém",
+    "cpf": "111.111.111-11",
+    "email": "ze@gmail.com",
+    "telefone": "(11)99999-9999",
+    "rua": "Rua Sem Nome",
+    "n_casa": 1,
+    "bairro": "Palmeirinha",
+    "cidade": "Ponta Grossa",
+    "uf": "PR",
+    "cep": "84000000",
+    "senha": "banana123"
+}
