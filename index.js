@@ -30,6 +30,19 @@ app.post("/cadastrar", async (req, res) =>{
     }
 })
 
+app.post("/login", async (req, res)=>{
+    const login = req.body;
+    if(login.email == null) {
+        return res.status(400).json({erro: "informe o email"})
+    }
+
+    if(login.senha == null) {
+        return res.status(400).json({erro: "Informe a senha"})
+        }
+        return res.status(200).json({erro: "Login recebido"})
+    
+})
+
 app.get("/clientes", async (req,res) => {
     try {
         const resultado = await db.pool.query("SELECT * FROM cliente")
