@@ -57,9 +57,9 @@ app.post("/login", async (req,res)=>{
         const token = jwt.sign(dados, "senha_muito_forte", {expiresIn: '1m' })                
         return res.status(200).json({token: token})
     } catch (error) {
-        return res.status(500).json({erro: "Erro interno na API + error"})
-    }
-})
+        return res.status(500).json ({ erro: "Erro interno na API" + error })
+        }
+    })
 
 
 app.get("/clientes", async (req,res) => {
